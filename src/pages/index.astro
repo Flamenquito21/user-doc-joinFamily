@@ -1,0 +1,21 @@
+---
+import Header from "../components/header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Header />
+
+  <main>
+    <h1>Welcom to user docu</h1>
+    <img src="brand-black-logo.svg" alt="logo marca" />
+  </main>
+</Layout>
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+</style>

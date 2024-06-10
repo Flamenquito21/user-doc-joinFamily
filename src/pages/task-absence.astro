@@ -1,0 +1,31 @@
+---
+import Header from "../components/header.astro";
+import Layout from "../layouts/Layout.astro";
+import Image from "../components/image.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Header />
+
+  <main>
+    <h1>Ver tareas y ausencias</h1>
+    <Image
+      src="task-absence.png"
+      title="A la izquierda aparecen las tareas a la derecha las ausencias"
+      alt="Se muestra dos tablas una de tareas y otra de ausencias"
+      anotation="fiosafniosefniewosfniowe"
+    />
+  </main>
+</Layout>
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  h1 {
+    text-align: center;
+  }
+</style>

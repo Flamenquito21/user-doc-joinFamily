@@ -1,0 +1,44 @@
+---
+import Header from "../components/header.astro";
+import Layout from "../layouts/Layout.astro";
+import Image from "../components/image.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Header />
+
+  <main>
+    <h1>Actualizar tareas y ausencias</h1>
+    <h2>Actualizar tarea</h2>
+    <Image
+      src="task-table.png"
+      title="En la página tareas y ausencias encuentras la tabla. Para actualizar pulse en en actualizar en alguna fila" alt="Se muestra dos tablas una de tareas y otra de ausencias"
+    />
+    <Image
+     src="update-task.png"
+     title="Rellene todo el formulario con los nuevos datos" alt="Se muestra dos tablas una de tareas y otra de ausencias"
+   />
+    <h2>Actualizar ausencia</h2>
+    <Image
+      src="absence-table.png"
+      title="En la página tareas y ausencias encuentras la tabla. Para actualizar pulse en en actualizar en alguna fila" alt="Se muestra dos tablas una de tareas y otra de ausencias"
+    />
+    <Image
+     src="update-absence.png"
+     title="Rellene todo el formulario con los nuevos datos" alt="Se muestra dos tablas una de tareas y otra de ausencias"
+   />
+  </main>
+</Layout>
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  h1,h2 {
+    text-align: center;
+  }
+
+</style>

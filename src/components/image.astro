@@ -1,0 +1,33 @@
+---
+const { src, title, alt="", anotation = "" } = Astro.props;
+---
+
+<div class="container-image">
+  <p>{title}</p>
+  <img src={src} alt={alt} />
+  <p>{anotation}</p>
+</div>
+<style>
+  .container-image {
+    background-color: aliceblue;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    max-width: 90%;
+    border-radius: 1rem;
+    height: auto;
+  }
+  .container-image p {
+    text-align: center;
+  }
+  .container-image img {
+    object-fit: contain;
+
+    border-radius: 0.75rem;
+  }
+  .container-iamge p:last-child {
+    color: gray;
+  }
+</style>

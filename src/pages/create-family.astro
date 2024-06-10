@@ -1,0 +1,35 @@
+---
+import Header from "../components/header.astro";
+import Layout from "../layouts/Layout.astro";
+import Image from "../components/image.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Header />
+
+  <main>
+    <h1>Unirse a familia</h1>
+    <Image
+      src="see-families.png"
+      title="Clique en CREAR FAMILIA"
+      alt="explicación uniser a familia 1"
+    />
+    <Image
+      src="create-family.png"
+      title="Introduzca un nombre y suba una imagen"
+      alt="explicación uniser a familia 2"
+    />
+  </main>
+</Layout>
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  h1 {
+    text-align: center;
+  }
+</style>

@@ -1,0 +1,39 @@
+---
+import Header from "../components/header.astro";
+import Layout from "../layouts/Layout.astro";
+import Image from "../components/image.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Header />
+
+  <main>
+    <h1>Eliminar tareas y ausencias</h1>
+    <h2>Eliminar tarea</h2>
+    <Image
+      src="delete-task.png"
+      title="Si quiere eliminar una tarea pulse en borrar"
+    />
+  
+    <h2>Eliminar ausencia</h2>
+    <Image
+      src="delete-absence.png"
+      title="Si quiere eliminar una ausencia pulse en borrar"
+      
+    />
+  
+  </main>
+</Layout>
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  h1,h2 {
+    text-align: center;
+  }
+
+</style>
